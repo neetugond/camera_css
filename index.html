@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(rgb(1, 136, 165), rgb(21, 191, 191));
+      height: 100vh;
+    }
+
+    .container {
+      border: 5px solid black;
+      border-radius: 10px;
+      margin: auto;
+      width: 500px;
+      height: 300px;
+      background-color: rgb(67, 74, 78);
+    }
+    .camera-div {
+      border: 2px solid black;
+      width: 500px;
+      height: 200px;
+      background-color: rgb(243, 91, 90);
+      margin-top: 100px;
+      display: flex;
+    }
+    .left-div {
+      flex-grow: 1;
+      border-right: 10px solid black;
+    }
+    .mid-div {
+      flex-grow: 2;
+    }
+    .circle {
+      position: absolute;
+      background: white;
+      width: 150px;
+      left: 45%;
+      top: 210px;
+      height: 150px;
+      border-radius: 50%;
+      border: 20px solid black;
+    }
+    .right-div {
+      /* border: 1px solid black; */
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+
+    .dot {
+      width: 20px;
+      height: 20px;
+      /* border: 10px solid black; */
+      border-radius: 50%;
+      background-color: black;
+
+      margin: auto;
+      margin-top: 20px;
+    }
+
+    .rectangle {
+      width: 30px;
+      height: 15px;
+      background-color: black;
+      margin: auto;
+      margin-top: 100px;
+    }
+    .top-three-main {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .top-three-main div {
+      background-color: rgb(67, 74, 78);
+      border: 5px solid black;
+      border-bottom: none;
+    }
+    .top-three-main .left {
+      width: 40px;
+      height: 20px;
+    }
+    .top-three-main .mid {
+      width: 150px;
+      height: 20px;
+    }
+    .top-three-main .right {
+      width: 40px;
+      height: 20px;
+    }
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      color: white;
+    }
+  </style>
+  <body>
+    <div class="main-container">
+      <div class="top-three-main">
+        <div class="left"></div>
+        <div class="mid"></div>
+        <div class="right"></div>
+      </div>
+      <div class="container">
+        <div class="camera-div">
+          <div class="left-div"></div>
+          <div class="mid-div">
+            <div class="circle"></div>
+          </div>
+          <div class="right-div">
+            <div class="dot"></div>
+            <div class="rectangle"></div>
+          </div>
+        </div>
+      </div>
+      <h1>2D CAMERA</h1>
+    </div>
+  </body>
+</html>
